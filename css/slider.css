@@ -1,0 +1,982 @@
+.contentSlider{
+  width: 100%;
+  height: 520px;
+  margin: 0 auto;
+  overflow-X: hidden;
+  background-image: url('../img/portfolio/xcvxcv.png');
+  background-repeat: repeat-x;
+  background-color:#F4F4F4;
+  background-size: contain;
+  box-shadow: inset 0px 25px 130px 30px rgba(0, 0, 0, 0.6);
+}
+.sliderConteiner {
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  height: 0;
+  padding-bottom: 0;
+  margin-bottom: 500px;
+  user-select: none;
+}
+.sliderConteiner input {
+  display: none;
+}
+.sliderConteiner .slide_img {
+  position: absolute;
+  width: 100%;
+  height: 416px;
+  z-index: -1;
+}
+.startUp{
+  width: 514px;
+  height: 338px;
+  position: absolute;
+  top: 76px;
+  left:-16px;
+  outline: none;
+  animation:anim 3s;
+}
+.startDown{
+  position: absolute;
+  top: 99px!important;
+  left: 448px!important;
+  width: 245px!important;
+  height: 301px!important;
+}
+.shadowBorder{
+  position: absolute;
+  top: 99px!important;
+  left: 448px!important;
+  width: 301px!important;
+  height: 257px!important;
+  box-shadow: 0px 0px 11px 1px #616668;
+}
+.rightUp{
+  position: absolute;
+  top: 169px!important;
+  left: -48px!important;
+  width: 200px!important;
+  height: 204px!important;
+}
+.text-slide{
+  position: absolute;
+  top: 77px!important;
+  right: 18px!important;
+  font-size: 14px;
+}
+.slide_img p, .slide_img li{
+  color:#EEEEEE;
+}
+.alwebLogo{
+  width:175px;
+  height: 62px;
+  margin-bottom: 10px;
+}
+.ulSlide{
+  width: 290px; 
+}
+.my-btn{
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  color:#fff;
+  background: none;
+  display: block;
+  margin-top: 20px!important;
+  padding: 10px;
+  border-radius: 10px;
+  width: 180px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+.my-btn:hover{
+  color:#fff;
+}
+.btn-1f::before{
+  border-radius: 22px;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  top: 1%;
+  left: 0%;
+  background: #2775FF;
+  z-index: -1;
+}
+.btn-1f::after {
+  border-radius: 22px;
+  width: 101%;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  background: #000;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.btn-a::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-1f:hover::after {
+  height: 100%;
+  opacity: 1;
+}
+.btn-1f:hover {
+  background: rgba(39, 117, 255, 0);
+}
+.textForTwoElement{
+  position: absolute;
+  top: 77px!important;
+  right: 120px!important;
+  font-size: 14px;
+  width:400px;
+}
+.ulForTwoElement{
+  width:100%;
+}
+.ulForTwoElement li{
+  line-height: 2;
+}
+.ClientName{
+  color:#fff;
+  line-height: 1.7;
+  font-weight: 10;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.ClientName::before,.ClientName::after{
+  content: "";
+  background: #8E9194;
+  height: 2px;
+  width: 75px;
+  position: absolute;
+  bottom: 50%;
+}
+.ClientName::before { 
+  left: 19%;
+  margin-left: -41px;
+}
+.ClientName::after {
+  right: 19%;
+  margin-right: -41px;
+}
+/* start Arrow */
+.sliderConteiner .slide_img .prev, .sliderConteiner .slide_img .next {
+  width: 6%;
+  height: 56px;
+  position: absolute;
+  top: 46%;
+  background-color: rgba(38, 116, 254, 0.2);
+  z-index: 99;
+  transition: .45s;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 20px;
+}
+.sliderConteiner .slide_img .next {
+  right: 0;
+  margin-right: -80px
+}
+.sliderConteiner .slide_img .prev {
+  left: 0;
+  margin-left: -80px;
+}
+.sliderConteiner .slide_img .prev:hover, .sliderConteiner .slide_img .next:hover {
+  transition: .3s;
+  background-color: rgba(38, 116, 254, 0.8);
+}
+.sliderConteiner .slide_img .prev span, .sliderConteiner .slide_img .next span {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: solid 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sliderConteiner .slide_img .prev span {
+  border-color: transparent #fff transparent transparent;
+  right: 35%;
+}
+.sliderConteiner .slide_img .next span {
+  border-color: transparent transparent transparent #fff;
+  left: 35%;
+}
+
+/* --------------  smm slider ------------------- */
+
+.forplan{
+  position: absolute;
+  top: 21px;
+  left: 63px;
+  width: 29%!important;
+  height: 90%!important;
+}
+.fortel{
+  position: absolute;
+  top: 68px;
+  right: 114px;
+  width: 13%!important;
+  height: 69%!important;
+}
+.text-smm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #2D2F30;
+  padding: 20px;
+  position: absolute;
+  top: 42px!important;
+  right: 300px!important;
+  border-radius: 10px 55px 10px 55px;
+  box-shadow: 0px 0px 29px 1px #000;
+}
+.text-smm .ulSlide{
+  line-height: 1.6;
+}
+.logo_im{
+  width: 180px !important;;
+  height:60px !important;
+  margin-bottom: 10px;
+}
+
+/* -------------- branding slider -------------- */
+
+.slide_branding{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.text_branding{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 310px;
+  width: 33%;
+}
+.branding_top{
+  width:280px !important;
+  height:122px !important;
+}
+.branding_left{
+  width: 56% !important;
+  height: auto !important;
+}
+#i1:checked ~ #one .slide_branding .branding_left,
+#i2:checked ~ #two .slide_branding .branding_left {
+  animation:  brand_animate_left 1s forwards;
+}
+#i1:checked ~ #one .slide_branding .text_branding .branding_top,
+#i2:checked ~ #two .slide_branding .text_branding .branding_top
+{
+  animation:  brand_animate_top 1.3s forwards;
+}
+#i1:checked ~ #one .slide_branding .text_branding .text_for_branding,
+#i2:checked ~ #two .slide_branding .text_branding .text_for_branding {
+  animation: gocentre 2s forwards;
+}
+@keyframes brand_animate_left {
+  0% {
+    opacity: 0.2;
+    transform: translate(-200px,20px);    
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes brand_animate_top {
+  0% {
+    opacity: 0.2;
+    transform: translate(150px,-30px);    
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* smm slider animate!!! */
+
+#i1:checked ~ #one .forplan,
+#i2:checked ~ #two .forplan,
+#i3:checked ~ #three .forplan{
+  animation:  goleft 1s forwards;
+}
+#i1:checked ~ #one .fortel,
+#i2:checked ~ #two .fortel,
+#i3:checked ~ #three .fortel{
+  animation:  goright 1s forwards;
+}
+#i1:checked ~ #one .text-smm,
+#i2:checked ~ #two .text-smm,
+#i3:checked ~ #three .text-smm{
+  animation:  gocentre 2s forwards;
+}
+
+@keyframes goleft {
+  0% {
+    opacity: 0.2;
+    transform: translate(-100px);    
+  }
+  100% {
+    opacity: 1;
+    transform: translate(30px);
+  }
+}
+
+@keyframes goright {
+  0% {
+    opacity: 0.2;
+    transform: translate(100px);    
+  }
+  100% {
+    opacity: 1;
+    transform: translate(30px);
+  }
+}
+
+@keyframes gocentre {
+  0% {
+    opacity: 0.2; 
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*  end SMM */
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four {
+  z-index: 9;
+  animation: scroll 1s ease-in-out;
+}
+#i1:checked ~ #one .startUp,
+#i2:checked ~ #two .startUp,
+#i3:checked ~ #three .startUp,
+#i4:checked ~ #four .startUp {
+  animation:  go 1s forwards;
+}
+#i1:checked ~ #one .rightUp,
+#i2:checked ~ #two .rightUp,
+#i3:checked ~ #three .rightUp,
+#i4:checked ~ #four .rightUp {
+  animation:  Right 1s forwards;
+}
+#i1:checked ~ #one .startDown,
+#i2:checked ~ #two .startDown,
+#i3:checked ~ #three .startDown,
+#i4:checked ~ #four .startDown {
+  animation:  Bottom 1s forwards;
+}
+#i1:checked ~ #one .shadowBorder,
+#i2:checked ~ #two .shadowBorder,
+#i3:checked ~ #three .shadowBorder,
+#i4:checked ~ #four .shadowBorder {
+  animation:  Bottom 1s forwards;
+}
+#i2:checked ~ #two .textForTwoElement{
+  animation: trambling-animation 1.5s ease-in-out ;
+}
+#i2:checked ~ #two .textForTwoElement .ClientName{
+  animation: trambling-h1-animation 1.5s ease-in-out ;
+}
+@keyframes trambling-animation {
+  0% {
+    transform: translate(300px);
+    opacity: 0;
+  }
+  30%{
+    transform: translate(0px);
+    opacity: 0.4;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes trambling-h1-animation {
+  0% {
+  }
+  70%, 90% {
+    transform: rotate(0deg);
+  }
+  30%, 50% {
+    transform: rotate(-10deg);
+  
+  }
+  40%, 60% {
+    transform: rotate(10deg);
+  }
+}
+/* ------ text slide for sites  Animation ------- */
+
+#i1:checked ~ #one .text-slide,
+#i3:checked ~ #three .text-slide
+{
+  animation: text 1.5s forwards;  
+}
+@keyframes text {
+  0% {
+    opacity: 0;  
+    transform: translate(50px,20px);    
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* -------- text slide for sites   Animation --------- */
+
+#i1:checked ~ #nav_slide #dot1 {
+  background: #795548;
+}
+#i2:checked ~ #nav_slide #dot2 {
+  background: #F44336;
+}
+#i3:checked ~ #nav_slide #dot3 {
+  background: #2196F3;
+}
+#i4:checked ~ #nav_slide #dot4 {
+  background: #4CAF50;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes go {
+  0% {
+    opacity: 0.3;
+    transform: translate(-200px);    
+  }
+  100% {
+    opacity: 1;
+    transition: all 500ms forwards;
+    transform: translate(30px);
+  }
+}
+@keyframes Right {
+  0% {
+    opacity: 0;
+    transform: translate(70%,20%);    
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    transition: all 500ms forwards;
+  }
+}
+@keyframes Bottom {
+  0% {
+    opacity: 0;
+    transform: translate(-20%,-10%);    
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    transition: all 500ms forwards;
+  }
+}
+@keyframes anim {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@media screen and (max-width:1220px){
+  .contentSlider{
+    height: 320px;
+  }
+  .slide_img{
+    height: 242px!important;
+    margin-top: 20px;
+  } 
+  .sliderConteiner{
+    width: 84%;
+    margin-bottom: 0px;
+  }
+  .sliderConteiner .slide_img .prev, .sliderConteiner .slide_img .next{
+    top:80px;
+  }
+  .startUp {
+    width: 43%!important;
+    height: auto!important;
+    top: 3%!important;
+  }
+  .startDown {
+    left: 38%!important;
+    width: 17%!important;
+    top: 8%!important;
+  }
+  .rightUp{
+    width: 13% !important;
+    top: 35%!important;
+    left: -3%!important;
+  }
+  .text-slide{
+    top: -15px!important;
+    right: 39px!important;
+    
+  }
+  .text_zone{
+    font-size: 13px;
+  }
+  .shadowBorder{
+    width:21%!important;
+    top: 20%!important;
+    left: 38%!important;
+  }
+  .textForTwoElement{
+    top: -2px!important;
+    right: 8%!important;
+  }
+
+  /*  -------------- start branding slider -----------  */
+
+  .margin_null{
+    margin-top: 0px!important;
+  }
+  .slide_branding{
+    height: 100%;
+    padding-top: 20px;
+  }
+  .branding_left{
+    width: 46% !important;
+  }
+  .text_branding{
+    justify-content: flex-start;
+    height: 100%;
+    width: 40%;
+  }
+  .branding_top{
+    align-self: center;
+  }
+  .text_for_branding{
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .branding_top {
+    width: 205px !important;
+    height: 78px !important;
+    margin-bottom: 20px;
+}  
+
+/* ----------- end branding slider ------------- */
+/* ------- smm start Slider ----------- */
+
+  .forplan{
+    left: 0%;
+    top: -9%;
+    width: 23%!important;
+    height: 113%!important;
+  }
+  .text-smm{
+    top: -5px!important;
+    right: 19%!important;
+    width: 51%;
+  }
+  .text-smm .ulSlide{
+    width:auto;
+  }
+  .fortel{
+    top: 8%;
+    right: 7%;
+    width: 10%!important;
+  }
+  /*  smm  end Slider */ 
+}
+
+@media screen and (max-width:1040px){
+.textForTwoElement {
+  top: -11px!important;
+  right: 4%!important;
+}
+.ulForTwoElement li {
+  line-height: 1.6;
+}
+  .forplan{
+    width: 28%!important;
+    left: -3%;
+  }
+  .text-smm{
+    right: 16%!important;
+  }
+  .fortel{
+    right: 4%;
+    top: 16%;
+    width: 10%!important;
+    height: 70%!important;
+  }
+}
+
+@media screen and (max-width:980px){
+  .text-slide{
+    top: -12px!important;
+    right: 7%!important;
+    font-size: 12px;
+  }
+  .ulSlide{
+    width:216px;
+  }
+  .textForTwoElement {
+    font-size: 12px;
+    width: 47%;
+  }
+  .ClientName {
+    margin-bottom: 9px;
+  }
+  .fortel{
+    width: 83px!important;
+    height: 73%!important;
+    right: 6%;
+  }
+  .forplan{
+    width:205px !important;
+  }
+  .slide_branding{
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+  }
+  .branding_left{
+    width: 53% !important;
+  }
+}
+
+@media screen and (max-width:900px){
+  .sliderConteiner .slide_img .prev{
+    margin-left: -59px;
+  }
+  .sliderConteiner .slide_img .next {
+      margin-right: -59px;
+  }
+}
+
+@media screen and (max-width:800px){
+  .ClientName{
+    font-weight: 200;
+    font-size: 20px;
+  }
+  .ulForTwoElement li{
+    line-height: 1.5;
+    font-size: 11px; 
+  }
+  .forplan{
+    width: 191px !important;
+    height: 100%!important;
+    top: -3%;
+    left: -7%;
+  }
+  .fortel {
+    width: 70px!important;
+    height: 65%!important;
+    right: 4%;
+}
+  .text-smm .ulSlide{
+    font-size: 13px;
+  }
+  .my-btn {
+    padding: 6px;
+    width: 121px;
+    font-size: 11px;
+  }
+}
+
+
+@media screen and (max-width:780px){
+  .text-slide{
+    top: -7px!important;
+    right: -2%!important;
+    font-size: 12px;
+  }
+  .ulSlide{
+    width:216px;
+  }
+  .rightUp {
+    width: 13% !important;
+    top: 29%!important;
+    left: -3%!important;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .contentSlider{
+    padding-top: 20px;
+    height: 320px;
+  }
+  .sliderConteiner {
+    border: none;
+    width: 100%;
+    height: 0;
+    margin-top:0px;
+  }
+  .slide_img{
+    margin-top:0px;
+    height: 165px!important;
+    margin-left:10px; 
+  }
+  .alwebLogo {
+    width: 113px!important;
+    height: 35px!important;
+  }
+  .text-slide{
+    right:6% !important;
+  }
+  .startUp{
+    width: 34%!important;
+    left:2% !important;
+  }
+  .rightUp{
+    width:9% !important;
+    left: 4%!important;
+  }
+  .startDown {
+    left: 40%!important;
+    width: 13%!important;
+    top: 9%!important;
+  }
+  .shadowBorder{
+    width:18% !important;
+    left: 36%!important;
+  }
+  .textForTwoElement {
+    top: -11px!important;
+    right: 9%!important;
+  }
+  .ulForTwoElement li{
+    font-size: 9px;
+  }
+  .ClientName::after,.ClientName::before{
+    bottom: 45%;
+    height: 1px;
+    width: 55px;
+  }  
+  .sliderConteiner .slide_img .prev, .sliderConteiner .slide_img .next {
+    width: 30px;
+    height: 44px;
+    top: 29%;
+  }
+  .sliderConteiner .slide_img .prev {
+    margin-left: -10px;
+  }
+  .sliderConteiner .slide_img .next {
+    margin-right: 10px;
+  }
+  .sliderConteiner .slide_img .prev span, .sliderConteiner .slide_img .next span {
+    border: solid 12px;
+  }
+  .sliderConteiner .slide_img .prev span {
+    border-color: transparent #fff transparent transparent;
+  }
+  .sliderConteiner .slide_img .next span {
+    border-color: transparent transparent transparent #fff;
+  }
+
+  /* ------------ start branding slider ------------ */
+
+  .branding_left {
+    width: 40% !important;
+  }
+  .text_branding{
+    width: 50%;
+    margin-right: 25px;
+  }
+  .text_for_branding {
+    font-size: 11px;
+  }
+  .branding_top{
+    width:107px !important;
+    height: auto !important
+  }
+  /* ------------- end branding slider ----------- */
+  /*  smm start slider  */
+  .logo_im {
+    width: 105px !important;
+    height: 29px !important;
+    margin-bottom: 10px;
+  }
+  .forplan {
+    width: 153px !important;
+    height: 106%!important;
+    top: -3%;
+    left: -2%;
+  }
+  .text-smm{
+    padding: 8px 5px 13px 13px;
+    border-radius: 10px 30px 10px 30px;
+    right: 18%!important;
+  }
+  .fortel {
+    width: 54px!important;
+    height: 70%!important;
+    right: 12%;
+  }
+  /*  smm end slider  */
+}
+
+@media screen and (max-width: 580px){
+  .ulSlide {
+    width: 170px;
+  }
+  .text-slide{
+    font-size: 9px;
+    right: 9% !important;
+    top: -5px!important;
+  }
+  .rightUp{
+    width:10% !important;
+    top: 27%!important;
+  }
+  /*  smm start slider  */
+  .text-smm .ulSlide {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .fortel {
+  display:none;
+  }
+  .text-smm {
+    right: 9%!important;
+  }
+  /*  smm end slider  */
+}
+
+@media screen and (max-width: 500px){
+  .rightUp{
+    display:none;
+  }
+  .shadowBorder{
+    display:none;
+  }
+  .ulSlide {
+    width: 171px;
+    font-size: 10px;
+  }
+  .startUp {
+    width: 45%!important;
+    left: -4% !important;
+  }
+  .startDown {
+    display:none;
+  }
+  .textForTwoElement {
+    width: 42%;
+    right: 8%!important;
+  }
+  /* smm slider */
+  .text-smm .ulSlide {
+    font-size: 12px;
+  }
+  .text-smm{
+    width:250px;
+    box-sizing: border-box;
+  }
+  .forplan{
+    left: -3%;
+  }
+  /* smm slider */
+}
+@media screen and (max-width: 464px){
+  .text-smm{
+    width:215px;
+  }
+}
+@media screen and (max-width: 433px){
+  .my-btn{
+    margin:20px auto 0px auto;
+  }
+  .contentSlider{
+    height: 385px;
+  }
+  .alwebLogo {
+    width: 159px!important;
+    height: 45px!important;
+  }
+  .ulSlide{
+    width:100%;
+  }
+  .text-slide{
+    width: 77%;
+    right: 10% !important;
+    top: 110%!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .startUp {
+    width: 67%!important;
+    left: 5% !important;
+    top: 4%!important;
+  }
+  .textForTwoElement {
+    width: 80%;
+    top: 105%!important;
+    right: 12%!important;
+  }
+  .ulForTwoElement li {
+    font-size: 10px;
+  }
+  /* ------------- start branding slider ----------- */
+  .slide_branding{
+    flex-direction: column;
+  }
+  .branding_left{
+    align-self: center;
+    width: 62% !important;
+    margin-left:-5%;
+    margin-bottom: 3%;
+  }
+  .text_branding{
+    align-self: center;
+    width: 80%;
+  }
+  /* ------------- end branding slider ----------- */
+  /*  smm start slider */
+  .text-smm{
+    top: 110% !important;
+    width: 86%;
+  }
+  .forplan{
+    width: 157px !important;
+    height: 108%!important;
+    top: -5%;
+    left: 7%;
+  }
+  .fortel{
+    display: block;
+    top: 5%;
+    right: 29%;
+    width: 68px!important;
+    height: 87%!important;
+  }
+  /*  smm start slider */
+}
+
+@media screen and (max-width: 390px){
+  .text-slide{
+    top: 90%!important;
+  }
+  .forplan{
+    left: 5%;
+  }
+  .text-smm .ulSlide {
+    font-size: 11px;
+  }
+}
