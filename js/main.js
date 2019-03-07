@@ -54,7 +54,7 @@ setTimeout(function () {
    // FADE OUT EFFECT WHEN CLICK A LINK
     $(document).on("click", "a:not(.lightbox)", function () {
         var newUrl = $(this).attr("href");
-        if (!newUrl || newUrl[0] === "#") {
+        if (!newUrl || newUrl[0] === "") {
             location.hash = newUrl;
             return;
         }
@@ -349,7 +349,7 @@ if ($(window).width() > 481) {
 
 $(window).load( function() {
     
-
+smokeeffect()
 
 }); // document load end 
 
