@@ -347,7 +347,7 @@ if ($(window).width() > 481) {
 // End Vue
 
 
-$(window).load( function() {
+$(document).load( function() {
     
 smokeeffect()
 
