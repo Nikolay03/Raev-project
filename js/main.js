@@ -8,7 +8,7 @@ Preloader
 var width = 100,
     perfData = window.performance.timing,
     EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
-    time = ((EstimatedTime / 1000) % 50) * 100
+    time = ((EstimatedTime / 1000) % 100) * 100
 
 
 // Percentage Increment Animation
