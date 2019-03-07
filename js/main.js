@@ -5,47 +5,48 @@ $(document).ready( function() {
 /*-------------------------------------------------- 
 Preloader
 ---------------------------------------------------*/
-        perfData = window.performance.timing, 
-        EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
-        time = ((EstimatedTime/1000)%50) * 100
+var width = 100,
+    perfData = window.performance.timing,
+    EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+    time = ((EstimatedTime / 1000) % 50) * 100
 
 
-    // Percentage Increment Animation
-    var PercentageID = $(".percentage"),
-            start = 0,
-            end = 100,
-            durataion = time;
-            animateValue(PercentageID, start, end, durataion);
+// Percentage Increment Animation
+var PercentageID = $(".percentage"),
+    start = 0,
+    end = 100,
+    durataion = time;
+animateValue(PercentageID, start, end, durataion);
 
-    function animateValue(id, start, end, duration) {
+function animateValue(id, start, end, duration) {
 
-        var range = end - start,
-          current = start,
-          increment = end > start? 1 : -1,
-          stepTime = Math.abs(Math.floor(duration / range)),
-          obj = $(id);
+    var range = end - start,
+        current = start,
+        increment = end > start ? 1 : -1,
+        stepTime = Math.abs(Math.floor(duration / range)),
+        obj = $(id);
 
 
-        var timer = setInterval(function() {
-            current += increment;
-            $(obj).text(current);
-          //obj.innerHTML = current;
-            if (current == end) {
-                clearInterval(timer);
-            }
-        }, stepTime);
-    }
-    
+    var timer = setInterval(function () {
+        current += increment;
+        $(obj).text(current);
+        //obj.innerHTML = current;
+        if (current == end) {
+            clearInterval(timer);
+        }
+    }, stepTime);
+}
 
-    
-	setTimeout(function(){
-        $('.preloader').fadeOut();
-        
-        $('.cd-transition-layer').addClass('closing').delay(1000).queue(function(){
-            $(this).removeClass("visible closing opening").dequeue();
-        });
-        
-	}, time);
+
+
+setTimeout(function () {
+    $('.preloader').fadeOut();
+
+    $('.cd-transition-layer').addClass('closing').delay(1000).queue(function () {
+        $(this).removeClass("visible closing opening").dequeue();
+    });
+
+}, time);
 		
     
 
