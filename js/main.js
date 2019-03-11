@@ -11,7 +11,7 @@ var width = 100,
     time = ((EstimatedTime / 1000)%100) * 100
 
 
-// Percentage Increment Animation
+// Анимация прогрузки
 var PercentageID = $(".percentage"),
     start = 0,
     end = 100,
@@ -51,7 +51,7 @@ setTimeout(function () {
     
 
 
-   // FADE OUT EFFECT WHEN CLICK A LINK
+   // Эффект затемнения при клике
     $(document).on("click", "a:not(.lightbox)", function () {
         var newUrl = $(this).attr("href");
         if (!newUrl || newUrl[0] === "#") {
@@ -147,11 +147,6 @@ function smokeeffect () {
 
 }
 smokeeffect();
-
-
-
-//Прогрузка изображений
-
 
  
     
